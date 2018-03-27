@@ -5,17 +5,13 @@ def intersection(array1, array2)
 
     return intersection if array1.nil? || array2.nil?
 
-    index = 0
+    array1.each do |one_num|
 
-    until index == array1.length
-
-      array2.each do |num|
-        if num == array1[index]
-          intersection << num
+      array2.each do |two_num|
+        if one_num == two_num
+          intersection << one_num
         end
       end
-
-      index += 1
 
     end
 
