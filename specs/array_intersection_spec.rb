@@ -1,6 +1,11 @@
+require 'minitest/skip_dsl'
 require 'minitest/autorun'
 require 'minitest/reporters'
+require 'pry'
+
 require_relative '../lib/array_intersection'
+
+Minitest::Reporters.use! Minitest::Reporters::SpecReporter.new
 
 describe "array intersection" do
   describe "basic tests" do
