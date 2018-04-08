@@ -12,7 +12,7 @@ describe "array intersection" do
       intersection(array1, array2).sort!.must_equal expected_intersection
     end
 
-    it "some elements common" do
+    it "more elements in common" do
       array1 = [92, 2, 5, 4, 1, 89, 90]
       array2 = [89, 5, 76, 4, 1, 2]
       expected_intersection = [1, 2, 4, 5, 89]
