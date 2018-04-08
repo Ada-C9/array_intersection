@@ -6,7 +6,7 @@ def intersection(array1, array2)
 
   array1.length do |i|
     array2.length do |k|
-      if array1[i] == array2[x]
+      if array1[i] == array2[k]
         expected_intersection << array1[i]
       end
     end
