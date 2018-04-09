@@ -1,6 +1,6 @@
 # Creates a new array to return the intersection of the two input arrays
 def intersection(array1, array2)
-  return [] if array1.nil? || array2.nil? || array1.empty? || array2.empty?
+  return [] if array1.nil? || array2.nil?
 
   if array1.length > array2.length
     longer = array1
