@@ -9,7 +9,7 @@ def intersection(array1, array2)
 
   while i < array1.length
     j = 0
-    while j < array2. length
+    while j < array2.length
       if array1[i] == array2[j]
         new_array << array1[i]
       end
