@@ -1,7 +1,9 @@
 # Creates a new array to return the intersection of the two input arrays
 
 # Pseudocode:
-# option 1: iterate through array1 and for each element, compare to all elements in array2. if match is found shovel that element into intersection array
+# option 1(implemented): iterate through array1 and for each element, compare to all elements in array2. if match is found shovel that element into intersection array.
+
+# option 2?: combine arrays into one array, iterate through it and store each element in a hash with corresponding value of how many times it appears. then call hash.keys (with an argument for returning only those with a value greater than one) to return an array of the intersecting elements
 
 def intersection(array1, array2)
   intersection = []
@@ -15,5 +17,3 @@ def intersection(array1, array2)
   end
   intersection
 end
-
-# option 2: combine arrays into one array, iterate through combined store each element in a hash with corresponding value of how many times it appears. then call hash.keys (with an argument for returning only those with a value greater than one) to return an array of the intersecting elements
