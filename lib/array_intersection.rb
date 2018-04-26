@@ -1,18 +1,18 @@
 # Creates a new array to return the intersection of the two input arrays
-# Time complexity is O(nm) because the inner loop executes m times for every nth execution of the outer loop
-# Space complexity is O(1) because no additional memory is required for larger input (ie, longer array)
-def intersection(array1, array2)
-  array3 = []
+# Time complexity is O(nm) because the inner loop executes m times for every nth element
+# Space complexity is O(n) if n < m because the max amount of intersections is n elements in the smallest array
+def intersection(one, two)
+  intersection = []
   i = 0
 
-  return array3 if array1 == nil || array2 == nil
+  return intersection if one == nil || two == nil
 
-  until array1[i] == nil
+  until one[i] == nil
     j = 0
 
-    until array2[j] == nil
-      if array1[i] == array2[j]
-        array3 << array2[j]
+    until two[j] == nil
+      if one[i] == two[j]
+        intersection << two[j]
       end
       j += 1
     end
