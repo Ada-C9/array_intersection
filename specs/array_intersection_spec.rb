@@ -13,6 +13,7 @@ describe "array intersection" do
     end
 
     it "some elements common" do
+
       array1 = [92, 2, 5, 4, 1, 89, 90]
       array2 = [89, 5, 76, 4, 1, 2]
       expected_intersection = [1, 2, 4, 5, 89]
@@ -21,6 +22,7 @@ describe "array intersection" do
     end
 
     it "no elements common" do
+      skip
       array1 = [92, 2, 5, 90]
       array2 = [89, 76, 4, 1]
       expected_intersection = []
@@ -32,6 +34,7 @@ describe "array intersection" do
   describe "edge cases" do
     # if the parameter is an object, check for nil
     it "first parameter nil" do
+      skip
       array1 = nil
       array2 = [89, 76, 4, 1]
       expected_intersection = []
@@ -40,6 +43,7 @@ describe "array intersection" do
     end
 
     it "second parameter nil" do
+      skip
       array1 = [92, 2, 5, 90]
       array2 = nil
       expected_intersection = []
@@ -48,6 +52,7 @@ describe "array intersection" do
     end
 
     it "first array empty" do
+      skip
       array1 = []
       array2 = [70, 90, 34, 21, 78, 42]
       expected_intersection = []
@@ -56,6 +61,7 @@ describe "array intersection" do
     end
 
     it "second array empty" do
+      skip
       array1 = [70, 90, 34, 21, 78, 42]
       array2 = []
       expected_intersection = []
@@ -64,6 +70,7 @@ describe "array intersection" do
     end
 
     it "both arrays empty" do
+      skip
       array1 = []
       array2 = []
       expected_intersection = []
@@ -72,6 +79,7 @@ describe "array intersection" do
     end
 
     it "all elements common" do
+      skip
       array1 = [2, 5, 4, 1, 89]
       array2 = [89, 5, 4, 1, 2]
       expected_intersection = [1, 2, 4, 5, 89]
